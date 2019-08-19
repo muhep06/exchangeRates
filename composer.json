@@ -1,0 +1,33 @@
+{
+    "name": "muhep06/exchangerates",
+    "description": "This is a test package!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhep Atasoy",
+            "email": "muhepatasoy06@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Muhep\\ExchangeRates\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muhep\\ExchangeRates\\Providers\\ExchangeRatesServiceProvider"
+            ]
+        },
+        "acikveri": {
+            "endpoints": [
+                "Muhep\\ExchangeRates\\Endpoints\\Endpoint"
+            ],
+            "migrations": [
+                "Muhep\\ExchangeRates\\Migrations\\ExchangeRatesTable"
+            ]
+        }
+    }
+}

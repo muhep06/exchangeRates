@@ -29,5 +29,8 @@
                 "Muhep\\ExchangeRates\\Migrations\\ExchangeRatesTable"
             ]
         }
+    },
+    "require": {
+        "acikveri/importer": "dev-master"
     }
 }

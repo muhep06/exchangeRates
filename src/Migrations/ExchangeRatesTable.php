@@ -9,7 +9,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class ExchangeRatesTable extends ApiMigration
 {
-    public $table = "a";
+    public $table = "exchange_rates";
 
     public function blueprint(): \Closure
     {

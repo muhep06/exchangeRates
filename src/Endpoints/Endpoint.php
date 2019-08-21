@@ -41,9 +41,10 @@ class Endpoint extends GenerateApi
             ->insert('banknoteBuying', 'BanknoteBuying')
             ->insert('banknoteSelling', 'BanknoteSelling');
         if ($model->count() <= 0) {
-            $xml->update();
-        } else {
             $xml->import();
+        } else {
+            $xml->update();
+
         }
     }
 }

@@ -7,7 +7,6 @@ namespace Muhep\ExchangeRates\Endpoints;
 use AcikVeri\Importer\XMLImporter\XMLImporter;
 use App\Utils\ApiHelper;
 use App\Utils\GenerateApi;
-use App\Utils\UpdateHelper;
 use Muhep\ExchangeRates\Models\ExchangeRate;
 use Muhep\ExchangeRates\Utils\ExchangeRatesApi;
 use Muhep\vendor\acikveri\importer;
@@ -25,7 +24,7 @@ class Endpoint extends GenerateApi
         return response()->json(ExchangeRate::all(), 200, array(), JSON_PRETTY_PRINT);
     }
 
-    public function update(UpdateHelper $updateHelper = null)
+    public function update()
     {
         $xml = new XMLImporter();
         $xml->index = 'Currency';

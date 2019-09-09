@@ -1,0 +1,15 @@
+[
+  {
+    "api": "exchangerates",
+    "pages": [
+      {
+        "title": "İlk Bakış",
+        "filename": "first_look.md"
+      },
+      {
+        "title": "Kullanım",
+        "filename": "usage.md"
+      }
+    ]
+  }
+]

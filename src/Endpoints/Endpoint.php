@@ -21,7 +21,6 @@ class Endpoint extends GenerateApi
 
     public function boot(ApiHelper $helper = null)
     {
-
         return response()->json(ExchangeRate::all(), 200, array(), JSON_PRETTY_PRINT);
     }
 

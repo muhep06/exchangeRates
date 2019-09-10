@@ -5,6 +5,7 @@ namespace Muhep\ExchangeRates\Endpoints;
 
 
 use AcikVeri\Importer\XMLImporter\XMLImporter;
+use App\Constant\Category;
 use App\Utils\ApiHelper;
 use App\Utils\GenerateApi;
 use App\Utils\UpdateHelper;
@@ -13,11 +14,13 @@ use Muhep\ExchangeRates\Utils\ExchangeRatesApi;
 use Muhep\vendor\acikveri\importer;
 class Endpoint extends GenerateApi
 {
+    public $name = "Güncel Kur Bilgileri";
+
     public $apiName = "exchangerates";
 
     public $description = "Güncel kur bilgileri";
 
-    public $category = 1;
+    public $category = Category::BUSINESS;
 
     public function boot(ApiHelper $helper = null)
     {
